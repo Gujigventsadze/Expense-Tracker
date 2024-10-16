@@ -1,0 +1,96 @@
+
+.header {
+    font-size: 1.5rem;
+}
+.main-container {
+    width: 30%;
+}
+
+.balance-container {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.income-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    box-shadow: 0 0 2px black;
+    position: relative;
+}
+.middle-line {
+    position: absolute;
+    height: 50%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.29);
+    top: 25%;
+}
+
+.income-container .income, .expense {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+}
+.income-container p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+.income-amount {
+    color: rgb(28, 197, 28);
+}
+.expense-amount {
+    color: rgb(175, 15, 15);
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 15px;
+}
+.transaction-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.new-transaction-form {
+    display: flex;
+    flex-direction: column;
+}
+.new-transaction-form p {
+    margin: 10px 0 5px 0;
+}
+.new-transaction-form input, select {
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 3px gray;
+}
+
+.button {
+    margin-top: 10px;
+    background-color: rgb(123, 123, 236);
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.button:hover {
+    opacity: 0.7;
+}
+.button:active {
+    opacity: 0.5;
+}

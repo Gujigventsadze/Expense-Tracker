@@ -1,0 +1,17 @@
+.transaction-info {
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    justify-content: space-between;
+    position: relative;
+    font-size: 20px;
+    border: 1px solid gray;
+}
+
+.red-green-line {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 8px;
+}
