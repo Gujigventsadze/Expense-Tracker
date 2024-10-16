@@ -10,7 +10,12 @@ const NewTransaction = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newTransaction = { text, amount, type };
+
+    const currentTime = new Date()
+    const formattedTime = currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+    const newTransaction = { text, amount, type, time: formattedTime };
+    console.log(newTransaction)
     addTransaction(newTransaction);
 
     setAmount("");
